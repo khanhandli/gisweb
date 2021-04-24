@@ -40,14 +40,17 @@
 				<div class="line1">
 					<h3>Dân Cư</h3>
 					<img src="http://localhost:8081/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=nhuygis:camhoangdc_1" alt="" />
+					<!-- Cần thay localhost: cổng của các bạn và Layer= ... -->
 				</div>
 				<div class="line">
 					<h3>Đường</h3>
 					<img src="http://localhost:8081/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=nhuygis:camhoanggt_1" alt="" />
+					<!-- Cần thay localhost: cổng của các bạn và Layer= ... -->
 				</div>
 				<div class="line3">
 					<h3>UB</h3>
 					<img src="http://localhost:8081/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=nhuygis:camhoangub_1" alt="" />
+					<!-- Cần thay localhost: cổng của các bạn và Layer= ... -->
 				</div>
 			</div>
 		</div>
@@ -98,15 +101,16 @@
 	///hien thi lop ban do len web
 	var format = "image/png"
 	var bounds = [564178.2984813827,2317461.9513460337,564518.2767810355,2318018.0536381397]
+	// ở đường dẫn khi các bạn vào openlayer trong geoserver  
 	var vung = new ol.layer.Image({
 		source: new ol.source.ImageWMS({
 			ratio: 1,
-			url: 'http://localhost:8081/geoserver/nhuygis/wms',
+			url: 'http://localhost:8081/geoserver/nhuygis/wms', //cần thay url
 			params: {
 				'FORMAT': format,
 				'VERSION': '1.1.0',
 				STYLES: '',
-				LAYERS: 'nhuygis:camhoangdc_1'
+				LAYERS: 'nhuygis:camhoangdc_1'  //cần thay
 			}
 		})
 	});
@@ -114,12 +118,12 @@
 	var duong = new ol.layer.Image({
 		source: new ol.source.ImageWMS({
 			ratio: 1,
-			url: 'http://localhost:8081/geoserver/nhuygis/wms',
+			url: 'http://localhost:8081/geoserver/nhuygis/wms', //cần thay
 			params: {
 				'FORMAT': format,
 				'VERSION': '1.1.0',
 				STYLES: '',
-				LAYERS: 'nhuygis:camhoanggt_1'
+				LAYERS: 'nhuygis:camhoanggt_1'  //cần thay
 			}
 		})
 	});
@@ -127,12 +131,12 @@
 	var diem = new ol.layer.Image({
 		source: new ol.source.ImageWMS({
 			ratio: 1,
-			url: 'http://localhost:8081/geoserver/nhuygis/wms',
+			url: 'http://localhost:8081/geoserver/nhuygis/wms', //cần thay
 			params: {
 				'FORMAT': format,
 				'VERSION': '1.1.0',
 				STYLES: '',
-				LAYERS: 'nhuygis:camhoangub_1'
+				LAYERS: 'nhuygis:camhoangub_1'  //cần thay
 			}
 		})
 	});
