@@ -1,13 +1,14 @@
 
+
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
-	width: 100%;
+	width: 1290px;
 	overflow: hidden;
-	max-width: 1290px;
 }
 .map {
 	height: 400px;

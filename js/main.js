@@ -126,10 +126,10 @@ $("#document").ready(function () {
 
 	//hieenr thij
 
-	// var vectorSource = new ol.source.Vector({
-	// 	features: (new ol.format.GeoJSON()).readFeatures(n)
-	// })
-	// vectorLayer.setSource(vectorSource)
+	var vectorSource = new ol.source.Vector({
+		features: (new ol.format.GeoJSON()).readFeatures(n)
+	})
+	vectorLayer.setSource(vectorSource)
 	
 
 	//Lấy thông tin khi click chuột
@@ -211,7 +211,7 @@ $("#document").ready(function () {
 		shouldUpdate = false;
 	});
 
-	function di_den_diem(x, y ) {
+	function di_den_diem(x, y) {
 		var vi_tri = ol.proj.fromLonLat([x, y], projection);
 		view.animate({
 			center: vi_tri,
@@ -253,4 +253,4 @@ $("#document").ready(function () {
 
 	//tao popup
 
-})
+});

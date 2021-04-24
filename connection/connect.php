@@ -13,8 +13,6 @@
     if(!$conn) {
         echo "conectj xit";
     }
-
-    echo "Helo";
     
     //var_dump($conn)
     // $conn = pg_connect("dbname = password= host= port =)
