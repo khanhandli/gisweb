@@ -1,154 +1,147 @@
-
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
 }
 .map {
-	height: 400px;
-	width: 100%;
-	margin-bottom: 50px;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px;
 }
-
 
 .main {
-	width: 100%;
-	border: 1px solid;
+  width: 100%;
+  border: 1px solid #ccc;
 }
 .main-gis {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .map {
-	flex: 3;
+  flex: 3;
+}
+
+td {
+  font-size: 0.9rem;
+}
+
+form > input {
+  margin-top: 10px;
 }
 
 .main__gis--left {
-	border-right: 1px solid;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  border-right: 1px solid #ccc;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 2%;
+  padding-left: 6px;
 }
 header {
-	text-align: center;
-	border-bottom: 1px solid;
-	padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.checkbox_form {
+  font-size: 0.9rem;
 }
 
 .main__gis--right {
-	border-left: 1px solid;
-	flex: 1;
-	position: relative;
-	display: flex;
-}
-
-.main__gis--right::after {
-	content: '';
-	position: absolute;
-	display: block;
-	height: 1px;
-	top: 10%;
-	width: 100%;
-	background-color: #333;
+  border-left: 1px solid #ccc;
+  position: relative;
+  display: flex;
 }
 
 .main__gis--right > .line {
-	object-fit: cover;
-	padding: 0 20px;
+  object-fit: cover;
 }
 
 .main__gis--right > div {
-	text-align: center;
+  text-align: center;
 }
 
-.line1 {
+.main__gis--right > div > h3 {
+  border-bottom: 1px solid #ccc;
 }
 
-.line1::before {
-	content: '';
-	position: absolute;
-	display: block;
-	height: 100%;
-	top: 0;
-	width: 1px;
-	background-color: #333;
-	right: 46%;
+.line > h3 {
+  padding: 0 26px;
 }
 
-.line1::after {
-	content: '';
-	position: absolute;
-	display: block;
-	height: 100%;
-	top: 0;
-	width: 1px;
-	background-color: #333;
-	right: 20%;
-}
-
-.line3 {
-	padding-left: 10px;
+.line {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .line3 > h3 {
 }
 
-
-
 /* tao popup */
 
 .ol-popup {
-	position: absolute;
-	background-color: white;
-	box-shadow: 0 1px 4px rgba(0, 0,0,0.2);
-	padding: 15px;
-	border-radius: 10px;
-	border: 1px solid #ccc;
-	bottom: 12px;
-	left: -50px;
-	min-width: 280px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
 }
 
-.ol-popup::after, .ol-popup::before {
-	top: 100%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+.ol-popup::after,
+.ol-popup::before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 .ol-popup::after {
-	border-top-color: white;
-	border-width: 10px;
-	left: 48px;
-	margin-left: -10px;
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
 }
 
 .ol-popup::before {
-	border-top-color: #ccc;
-	border-width: 11px;
-	left: 48px;
-	margin-left: -11px;
+  border-top-color: #ccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
 }
 
 .ol-popup-closer {
-	text-decoration: none;
-	position: absolute;
-	top: 2px;
-	right: 8px;
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
 }
 
 .ol-popup-closer::after {
-	content: "x";
+  content: "x";
 }
 
-
+.muiten {
+  position: absolute;
+}

@@ -1,5 +1,5 @@
 <?php 
-    define('PG_DB', "8c4"); //cần thay
+    define('PG_DB', "nguyennhuy"); //cần thay
     define('PG_HOST', "localhost"); //cần thay
     define('PG_USER', "postgres"); //cần thay
     define('PG_PORT', "5432"); // cần thay
